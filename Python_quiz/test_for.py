@@ -1,3 +1,14 @@
-s= "12345"
-for i in s:
-    print(i)
+def evenOrOdd(num):
+    s = ""
+    if num % 2 == 0:
+        s ="even"
+    else:
+        s ="Odd"
+
+    return s
+
+
+#아래는 테스트로 출력해 보기 위한 코드입니다.
+print("결과 : " + evenOrOdd(3))
+print("결과 : " + evenOrOdd(2))
+
