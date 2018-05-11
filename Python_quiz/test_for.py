@@ -1,14 +1,15 @@
-'''getMiddle메소드는 하나의 단어를 입력 받습니다. 단어를 입력 받아서 가운데 글자를 반환하도록 getMiddle메소드를 만들어 보세요. 단어의 길이가 짝수일경우 가운데 두글자를 반환하면 됩니다.
-예를들어 입력받은 단어가 power이라면 w를 반환하면 되고, 입력받은 단어가 test라면 es를 반환하면 됩니다.
-'''
-def string_middle(str):
-    if len(str) % 2 == 0:
-        return str[len(str) // 2-1: len(str) // 2+1]
-    else:
-        return str[len(str) // 2]
-
+def sum_digit(number):
+    '''number의 각 자릿수를 더해서 return하세요'''
+    # list1 = list(str(number))
+    # res = 0
+    # for i in list1:
+    #     i = int(i)
+    #     res += i
+    # return res
+    return sum([int(i) for i in str(number)])
 
 # 아래는 테스트로 출력해 보기 위한 코드입니다.
-print(string_middle("powerk"))
-print(string_middle("powe"))
+print("결과 : {}".format(sum_digit(123)))
 
+# sum 함수는 리스트 원소의 합을 구해준다
+# sum 함수를 공부해보자
